@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+nav {
+  background-color: #282c28;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav div h1,a {
+  display: inline-block;
+  
+}
+
+nav div h1 {
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+
+nav div a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav div a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav div a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+nav .icon {
+  display: none;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
