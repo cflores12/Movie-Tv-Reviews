@@ -1,29 +1,19 @@
-interface Movie {
-  id: string;
-  name: string;
-  image: string;
-  likes: number;
-  views: number;
-}
-
-function buildMovie({
-  id = "1",
-  name = "Super Mario Bros",
-  image = "Something",
-  likes = 40,
-  views = 60,
-}: Partial<Movie> = {}): Movie {
-  return {
-    id,
-    name,
-    image,
-    likes,
-    views,
-  };
-}
+import { useGetMoviesForViewLikes } from "../components/use-queries";
 
 const Films = () => {
-  return <div>Start Films List</div>;
+  const movieData = useGetMoviesForViewLikes();
+
+  if (movieData.length === 0) return null;
+  return (
+    <div>
+      <h2>Grab Data of Movies with views and likes hover effect</h2>
+
+      <div>
+        <p>Test</p>
+        <p>{movieData[0]}</p>
+      </div>
+    </div>
+  );
 };
 
 export default Films;
