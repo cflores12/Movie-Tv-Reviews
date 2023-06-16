@@ -2,6 +2,7 @@ import { useGetMovies } from "../components/hooks/use-queries";
 
 const Films = () => {
   const movieData = useGetMovies();
+  console.log(movieData);
 
   if (movieData.length === 0) return null;
 

@@ -6,9 +6,7 @@ export const useGetMovies = () => {
   const [data, setData] = useState<Movie[]>([]);
 
   const getData = async () => {
-    const { movies } = await api.get<Movies>(
-      "../../../public/data/dummy_data.json"
-    );
+    const { movies } = await api.get<Movies>("./data/dummy_data.json");
     setData(movies);
   };
 
