@@ -6,6 +6,9 @@ export interface MovieViews {
   views: number;
 }
 
+export interface Movies {
+  movies: Movie[];
+}
 export interface Movie {
   id: string;
   name: string;

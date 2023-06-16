@@ -1,0 +1,46 @@
+{
+  "moives": [
+    {
+      "id": 2,
+      "names": "Spider-man",
+      "image": "Some Image Here",
+      "likes": 12,
+      "views": 12,
+      "reviews": [
+        {
+          "id": 1,
+          "comment": "This movie was trash",
+          "userName": "dan",
+          "stars": 2
+        },
+        {
+          "id": 2,
+          "comment": "This movie was good",
+          "userName": "aba",
+          "stars": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "names": "Super Mario Bros",
+      "image": "Some Image Here",
+      "likes": 22,
+      "views": 22,
+      "reviews": [
+        {
+          "id": 1,
+          "comment": "This movie was trash",
+          "userName": "dan",
+          "stars": 2
+        },
+        {
+          "id": 2,
+          "comment": "This movie was good",
+          "userName": "aba",
+          "stars": 4
+        }
+      ]
+    }
+  ]
+}
