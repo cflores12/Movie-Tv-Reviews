@@ -2,7 +2,6 @@ import { useGetMovies } from "../components/hooks/use-queries";
 
 const Films = () => {
   const movieData = useGetMovies();
-  console.log(movieData);
 
   if (movieData.length === 0) return null;
 
@@ -12,11 +11,9 @@ const Films = () => {
 
       <div>
         <p>Test</p>
-        <p>{movieData[0].id}</p>
       </div>
       <div>
         <p>Test Grab</p>
-        <p>{movieData[0].views}</p>
       </div>
     </div>
   );

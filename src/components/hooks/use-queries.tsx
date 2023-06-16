@@ -1,18 +1,18 @@
-import { useState, useEffect } from "react";
-import api from "../utils/api-methods";
-import { Movies, Movie } from "../types/movie";
+import React, { useState, useEffect } from "react";
 
-export const useGetMovies = () => {
-  const [data, setData] = useState<Movie[]>([]);
+export function useGetMoviesOnlyViewsLikes() {
+  const [movies, setMovies] = useState([]);
 
   const getData = async () => {
-    const { movies } = await api.get<Movies>("./data/dummy_data.json");
-    setData(movies);
+    const response = await fetch("https://pokeapi.co/api/v2/type");
+    const data = await response.json();
+    //const names = data.results.map((r) => r.name); // extracting 'name' prop into array of names
+    setMovies(data);
   };
 
   useEffect(() => {
     getData();
   }, []);
 
-  return data;
-};
+  return movies;
+}
