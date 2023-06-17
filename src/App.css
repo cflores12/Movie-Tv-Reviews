@@ -57,6 +57,12 @@ div.starter-top {
   overflow-x: hidden;
 }
 
+div.most-view-like {
+  background-color: #282c28;
+  color: white;
+  overflow-x: hidden;
+}
+
 div.starter-top h2 {
   color: white;
 }

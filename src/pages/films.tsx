@@ -1,9 +1,7 @@
-import { useGetMovies } from "../components/hooks/use-queries";
-
 const Films = () => {
-  const movieData = useGetMovies();
+  //const movieData = useGetMovies();
 
-  if (movieData.length === 0) return null;
+  //if (movieData.length === 0) return null;
 
   return (
     <div>
