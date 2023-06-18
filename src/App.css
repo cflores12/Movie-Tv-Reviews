@@ -51,6 +51,12 @@ div.starter-top {
   background-size: cover;
   height: 650px;
   overflow-x: hidden;
+  text-align: center;
+}
+
+div.starter-top div {
+  color: white;
+  margin-top: 450px;
 }
 
 div.most-view-like {
@@ -104,10 +110,6 @@ div.most-view-like span.card div.card-middle-box div.box p {
   margin: 0;
 }
 
-div.starter-top h2 {
-  color: white;
-}
-
 div.playlists-comments {
   height: 700px;
   width: 100%;
@@ -119,7 +121,7 @@ div.playlists-comments {
 }
 
 div.playlists-comments div.recent-comments {
-  flex: 1;
+  flex: 2;
 }
 
 div.playlists-comments div.recent-comments h2 {
@@ -127,28 +129,54 @@ div.playlists-comments div.recent-comments h2 {
 }
 
 div.playlists-comments div.popular-playlists {
+  flex: 1/2;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+div.playlists-comments div.popular-playlists div.playlist-card .playlist-img {
+  height: 200px;
   width: 400px;
 }
 
+div.playlists-comments div.popular-playlists div.playlist-card .text {
+  display: flex;
+}
+
+div.playlists-comments div.popular-playlists div.playlist-card {
+  width: 100%;
+}
+
 div.playlists-comments div.recent-comments div.review {
-  display: grid;
-  grid-template-columns: 100px 140px;
+  display: flex;
+  flex-direction: row;
   margin-left: 10px;
+  margin-bottom: 25px;
 }
 
 div.playlists-comments div.recent-comments div.review .user-info {
-  width: 170px;
-  display: grid;
-  grid-template-columns: 110px 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-div.playlists-comments div.recent-comments div.review .user-info h5,
+div.playlists-comments div.recent-comments div.review .user-info h4,
 h6 {
   margin-bottom: 0;
+  margin-left: 15px;
+}
+
+div.playlists-comments div.recent-comments div.review .user-info .user-text {
+  display: flex;
+}
+
+div.playlists-comments div.recent-comments div.review .user-info h4,
+h6 {
+  margin-top: 0;
 }
 
 div.playlists-comments div.recent-comments div.review .movie {
   width: 100px;
+  height: 100px;
 }
 
 div.playlists-comments div.recent-comments div.review .comment .profile {
@@ -172,9 +200,13 @@ div.playlists-comments
 div.playlists-comments div.recent-comments div.review div.comment {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  /*width: 700px;*/
   margin-left: 10px;
   margin-top: 0px;
+}
+
+div.playlists-comments div.recent-comments div.review div.comment .user {
+  display: flex;
 }
 
 div.playlists-comments div.recent-comments div.review div.comment h6 {
@@ -228,4 +260,10 @@ div.playlists-comments
   display: grid;
   grid-template-columns: 20px 20px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  div.playlists-comments div.recent-comments {
+    display: none;
+  }
 }

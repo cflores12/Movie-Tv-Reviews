@@ -5,6 +5,9 @@ import heart from "./img/heart.svg";
 import profile from "./img/profile-example.svg";
 import thumbUp from "./img/thumb-up.svg";
 import thumbDown from "./img/thumb-down.svg";
+import smallComment from "./img/small-comment.svg";
+import smallHeart from "./img/small-heart.svg";
+import smallProfile from "./img/small-profile.svg";
 
 const Movies = {
   movie1: {
@@ -55,9 +58,11 @@ const Home = () => {
   return (
     <div className="starter">
       <div className="starter-top">
-        <h2>Track films and Tv Shows you've watched.</h2>
-        <h2>Save and Share those you want to see.</h2>
-        <h2>Tell your Friends and Family what's good.</h2>
+        <div>
+          <h2>Track films and Tv Shows you've watched.</h2>
+          <h2>Save and Share those you want to see.</h2>
+          <h2>Tell your Friends and Family what's good.</h2>
+        </div>
       </div>
       <div className="most-view-like">
         <span className="card">
@@ -93,10 +98,15 @@ const Home = () => {
           <div className="review">
             <img src={imgAvatar} className="movie" />
             <div className="user-info">
-              <h5>Dan Forever</h5>
-              <h6>6/17/2023 now</h6>
+              <div className="user-text">
+                <h4>Movie</h4>
+                <h4>2023</h4>
+              </div>
               <div className="comment">
-                <img src={profile} className="profile" />
+                <div className="user">
+                  <img src={profile} className="profile" />
+                  <h5>Dan Forever</h5>
+                </div>
                 <h5 className="user-comment">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
@@ -126,10 +136,16 @@ const Home = () => {
           <div className="review">
             <img src={imgAvatar} className="movie" />
             <div className="user-info">
-              <h5>Dan Forever</h5>
-              <h6>6/17/2023 now</h6>
+              <div className="user-text">
+                <h4>Movie</h4>
+                <h4>2023</h4>
+              </div>
               <div className="comment">
-                <img src={profile} className="profile" />
+                <div className="user">
+                  <img src={profile} className="profile" />
+                  <h5>Dan Forever</h5>
+                </div>
+
                 <h5 className="user-comment">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
@@ -159,6 +175,28 @@ const Home = () => {
         </div>
         <div className="popular-playlists">
           <h2>Popular Playlists</h2>
+          <div className="playlist-card">
+            <img src={imgAvatar} className="playlist-img" />
+            <div className="text">
+              <img src={smallProfile} />
+              <h5>Dan Forever</h5>
+              <img src={smallHeart} />
+              <h5>1000</h5>
+              <img src={smallComment} />
+              <h5>1000</h5>
+            </div>
+          </div>
+          <div className="playlist-card">
+            <img src={imgAvatar} className="playlist-img" />
+            <div className="text">
+              <img src={smallProfile} />
+              <h5>Dan Forever</h5>
+              <img src={smallHeart} />
+              <h5>1000</h5>
+              <img src={smallComment} />
+              <h5>1000</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
