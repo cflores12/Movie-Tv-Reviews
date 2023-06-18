@@ -12,7 +12,6 @@ const Films = () => {
     <div className="film-body">
       <div className="top-top">
         <div className="search-bar-with-tags">
-          <h5>tag</h5>
           <SearchBar term={searchTerm} setTerm={setSearchTerm} />
         </div>
         <div className="top-bottom">

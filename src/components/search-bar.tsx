@@ -8,6 +8,9 @@ type Search = {
 function SearchBar({ term, setTerm }: Search) {
   return (
     <div>
+      <h4>BROWSER BY:</h4>
+      <h5>Tags</h5>
+      <h5>Tags</h5>
       <label>FILMS:</label>
       <input
         value={term}
