@@ -2,6 +2,9 @@ import { useGetMoviesOnlyViewsLikes } from "../components/hooks/use-queries";
 import imgAvatar from "./img/img_avatar.png";
 import eye from "./img/eye.svg";
 import heart from "./img/heart.svg";
+import profile from "./img/profile-example.svg";
+import thumbUp from "./img/thumb-up.svg";
+import thumbDown from "./img/thumb-down.svg";
 
 const Movies = {
   movie1: {
@@ -86,10 +89,76 @@ const Home = () => {
       </div>
       <div className="playlists-comments">
         <div className="recent-comments">
-          <p>This is for most recent reviews with comments</p>
+          <h2>Recent Movie Reviews & Comments</h2>
+          <div className="review">
+            <img src={imgAvatar} className="movie" />
+            <div className="user-info">
+              <h5>Dan Forever</h5>
+              <h6>6/17/2023 now</h6>
+              <div className="comment">
+                <img src={profile} className="profile" />
+                <h5 className="user-comment">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like
+                </h5>
+                <div className="rating">
+                  <div className="thumbUp">
+                    <img src={thumbUp} />
+                    <h5 className="thumb-count">10</h5>
+                  </div>
+                  <div className="thumbDown">
+                    <img src={thumbDown} />
+                    <h5 className="thumb-count">10</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="review">
+            <img src={imgAvatar} className="movie" />
+            <div className="user-info">
+              <h5>Dan Forever</h5>
+              <h6>6/17/2023 now</h6>
+              <div className="comment">
+                <img src={profile} className="profile" />
+                <h5 className="user-comment">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like
+                </h5>
+                <div className="rating">
+                  <div className="thumbUp">
+                    <img src={thumbUp} />
+                    <h5 className="thumb-count">10</h5>
+                  </div>
+                  <div className="thumbDown">
+                    <img src={thumbDown} />
+                    <h5 className="thumb-count">10</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="popular-playlists">
-          <p>This is for the most popular playlits</p>
+          <h2>Popular Playlists</h2>
         </div>
       </div>
     </div>
