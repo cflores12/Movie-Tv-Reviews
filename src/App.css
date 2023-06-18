@@ -1,9 +1,3 @@
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 nav {
   background-color: #282c28;
   overflow: hidden;
