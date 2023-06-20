@@ -1,4 +1,5 @@
 import "./stylesheets/filmsheet.css";
+import Menu from "../components/dropdownmenu";
 import SearchBar from "../components/search-bar";
 import { useState } from "react";
 
@@ -10,8 +11,12 @@ const Films = () => {
 
   return (
     <div className="film-body">
-      <div className="top-top">
-        <div className="search-bar-with-tags">
+      <div className="top-bar">
+        <div className="search-bar-dropdowns">
+          <Menu /> {/*Year Filter*/}
+          <Menu /> {/*Rating Filter*/}
+          <Menu /> {/*POPULAR Filter*/}
+          <Menu /> {/*GENRE Filter*/}
           <SearchBar term={searchTerm} setTerm={setSearchTerm} />
         </div>
         <div className="top-bottom">
