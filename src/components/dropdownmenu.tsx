@@ -5,7 +5,7 @@ export type List = {
   values: string[];
 };
 
-export const Menu = (list: List): JSX.Element => {
+export const Menu = ({ list }: { list: List }): JSX.Element => {
   const [showDropDown, setShowDropDown] = useState<boolean>(false);
   const [selectCity, setSelectCity] = useState<string>("");
   const cities = () => {
