@@ -75,8 +75,17 @@ h2 {
 .top-bar .search-bar-dropdowns {
   display: flex;
   column-gap: 5px;
+  margin-top: 20px;
 }
 
 .top-bar .search-bar-dropdowns .search-bar {
   margin-left: 10px;
+  margin-top: 10px;
+}
+
+.review-movie-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

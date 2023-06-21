@@ -1,9 +1,12 @@
 import "./stylesheets/filmsheet.css";
-import Menu from "../components/dropdownmenu";
+import { Menu, List } from "../components/dropdownmenu";
 import SearchBar from "../components/search-bar";
 import { useState } from "react";
 
 const Films = () => {
+  const ex: List = {
+    values: ["something", "else", "so", "far"],
+  };
   const [searchTerm, setSearchTerm] = useState("");
   //const movieData = useGetMovies();
 
@@ -13,10 +16,10 @@ const Films = () => {
     <div className="film-body">
       <div className="top-bar">
         <div className="search-bar-dropdowns">
-          <Menu /> {/*Year Filter*/}
-          <Menu /> {/*Rating Filter*/}
-          <Menu /> {/*POPULAR Filter*/}
-          <Menu /> {/*GENRE Filter*/}
+          <Menu list={ex} /> {/*Year Filter*/}
+          <Menu list={ex} /> {/*Rating Filter*/}
+          <Menu list={ex} /> {/*POPULAR Filter*/}
+          <Menu list={ex} /> {/*GENRE Filter*/}
           <SearchBar term={searchTerm} setTerm={setSearchTerm} />
         </div>
         <div className="top-bottom">
@@ -24,7 +27,7 @@ const Films = () => {
           <div>List of Movies</div>
         </div>
       </div>
-      <div>
+      <div className="review-movie-list">
         <h3>JUST REVIEWED</h3>
         <div>List of Movies just Review</div>
       </div>

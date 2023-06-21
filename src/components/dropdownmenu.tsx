@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import DropDown from "./dropdown";
 
-const Menu: React.FC = (): JSX.Element => {
+export type List = {
+  values: string[];
+};
+
+export const Menu = (list: List): JSX.Element => {
   const [showDropDown, setShowDropDown] = useState<boolean>(false);
   const [selectCity, setSelectCity] = useState<string>("");
   const cities = () => {
@@ -56,7 +60,7 @@ const Menu: React.FC = (): JSX.Element => {
         <div>{selectCity ? "Select: " + selectCity : "Select ..."} </div>
         {showDropDown && (
           <DropDown
-            options={cities()}
+            options={list.values}
             showDropDown={false}
             toggleDropDown={(): void => toggleDropDown()}
             optionSelection={citySelection}
@@ -66,5 +70,3 @@ const Menu: React.FC = (): JSX.Element => {
     </>
   );
 };
-
-export default Menu;
