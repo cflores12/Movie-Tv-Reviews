@@ -7,10 +7,7 @@ type DropDownProps = {
   optionSelection: Function;
 };
 
-const DropDown: React.FC<DropDownProps> = ({
-  options,
-  optionSelection,
-}: DropDownProps): JSX.Element => {
+const DropDown = ({ options, optionSelection }: DropDownProps): JSX.Element => {
   const [showDropDown, setShowDropDown] = useState<boolean>(false);
 
   /**

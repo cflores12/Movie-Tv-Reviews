@@ -2,6 +2,7 @@ import "./stylesheets/filmsheet.css";
 import { Menu, List } from "../components/dropdownmenu";
 import SearchBar from "../components/search-bar";
 import { useState } from "react";
+import avatar from "./img/img_avatar.png";
 
 const Films = () => {
   const ex: List = {
@@ -24,7 +25,10 @@ const Films = () => {
         </div>
         <div className="top-bottom">
           <h2>POPULAR FILMS THIS WEEK</h2>
-          <div>List of Movies</div>
+          <div>
+            <img src={avatar} />
+            <img src={avatar} />
+          </div>
         </div>
       </div>
       <div className="review-movie-list">

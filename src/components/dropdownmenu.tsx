@@ -8,9 +8,6 @@ export type List = {
 export const Menu = ({ list }: { list: List }): JSX.Element => {
   const [showDropDown, setShowDropDown] = useState<boolean>(false);
   const [selectCity, setSelectCity] = useState<string>("");
-  const cities = () => {
-    return ["Hong Kong", "London", "New York City", "Paris"];
-  };
 
   /**
    * Toggle the drop down menu
