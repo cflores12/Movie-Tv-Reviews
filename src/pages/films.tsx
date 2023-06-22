@@ -28,12 +28,19 @@ const Films = () => {
           <div>
             <img src={avatar} />
             <img src={avatar} />
+            <img src={avatar} />
+            <img src={avatar} />
           </div>
         </div>
       </div>
       <div className="review-movie-list">
         <h3>JUST REVIEWED</h3>
-        <div>List of Movies just Review</div>
+        <div>
+          <img src={avatar} />
+          <img src={avatar} />
+          <img src={avatar} />
+          <img src={avatar} />
+        </div>
       </div>
       <div className="most-recent-comments">
         <div className="reviews">list of recent reviews</div>
